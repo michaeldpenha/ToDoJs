@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!-- [if gt IE 8]><! -->
+<html class="no-js">
+  <!-- <![endif] -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="container">
+      <section>
+        <div name="listTitle" class="hide">
+          <div class="flexClass titleDiv">
+            <label for="list-title"></label>
+          </div>
+        </div>
+        <div class="flexClass creationDiv" name="creationDiv">
+          <label for="labelHeader" name="labelHeader"></label>
+          <input type="text" name="inputVal" />
+          <input type="text" name="taskExpiry" placeholder="MM/DD/YYYY" class="hide" />
+          <button name="create"></button>
+        </div>
+      </section>
+      <section class="taskSection">
+        <div class="todo-list box hide">
+          <h2>To-Do Tasks</h2>
+          <ul></ul>
+        </div>
+        <div class="complete-list box hide">
+          <h2>Completed Tasks</h2>
+          <ul></ul>
+        </div>
+      </section>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/eventHandlers.js"></script>
+  </body>
+</html>

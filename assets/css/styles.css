@@ -1,0 +1,70 @@
+.hide{
+    display: none;
+}
+.container{
+    padding: 15px;
+}
+.flexClass{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.titleDiv{
+    height: 50px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    font-family: cursive;
+}
+.creationDiv label , .creationDiv input{
+    margin-right : 15px;
+}
+.creationDiv label{
+    font-family: cursive;
+}
+.creationDiv label , .creationDiv button{
+    padding : 5px;
+}
+.taskSection {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+.taskSection div{
+    flex: 1;
+    border: 1px solid #ccc;
+}
+.taskSection div > h2{
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding:5px;
+    text-align: center;
+}
+.taskSection div > ul{
+    margin: 0;
+    padding: 0;
+}
+.taskSection div > ul li{
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid #ccc;
+    background: #ccc;
+    height: 50px;
+    padding:15px;
+}
+
+.taskSection div > ul li label {
+    flex: 1;
+    padding-left: 15px;
+} 
+.taskSection div > ul li.completed , .taskSection div > ul li.expired , .taskSection div > ul li.attention-rquired{
+    color : #ffffff;
+}
+.taskSection div > ul li.attention-rquired{
+    background: orange;
+}
+.taskSection div > ul li.expired{
+    background: red;
+}
+.taskSection div > ul li.completed{
+    background: green;
+}
